@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adrianhps.mybday.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Birthday Counter!"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="18dp"/>
+
+    <!--<TextView
+        android:id="@+id/Enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your birthday by pressing the button below"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="18dp"/>-->
+
+    <Button
+        android:id="@+id/picDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Enter your birthday"
+        android:onClick="datePicker"/>
+
+    <TextView
+        android:layout_below="@+id/picDate"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:text="Birthday date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showDate"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/picImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Select an image"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/iv"/>
+
+</LinearLayout>
